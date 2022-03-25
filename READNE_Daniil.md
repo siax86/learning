@@ -17,3 +17,4 @@ git config --global user.name "Your Name"
 git push - выложить в глобальный репозиторий с локального 
 git pull - взять с  глобального в локальный репозитория фаил
 git switch - взять ветку к себе 
+git merge - объединить проекты

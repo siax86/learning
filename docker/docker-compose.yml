@@ -1,18 +1,46 @@
 version: '3.9'
 
 services:
-
+  php-fpm:
+    build:
+      context: ./php-fpm
+    container_name:  php_fpm
+    networks:
+      - proxy
+    restart: always
+    volumes:
+      - C:\project\learning\src:/var/www
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: learning
+      MYSQL_PASSWORD: password
+    volumes:
+      - C:\project\learning\db:/var/lib/mysql
+    networks:
+      - proxy
+    ports:
+      - "13306:3306"        
   nginx:
     build:
       context: ./nginx
+    ports:
+      - "8080:443"
     volumes:
       - C:\project\learning\src:/var/www
-      - C:\project\learning\nginx\nginx.conf:/etc/nginx/nginx.conf
-      - C:\project\learning\nginx\ssl:/etc/nginx/ssl
+      #- C:\project\learning\nginx\nginx.conf:/etc/nginx/nginx.conf
+      - C:\project\learning\docker\nginx\ssl:/etc/nginx/ssl
+      - C:\project\learning\docker\nginx\nginx.conf:/etc/nginx/nginx.conf:ro
     container_name: learning_server_nginx
     networks:
       - proxy
     restart: always
+    depends_on:
+      - php-fpm
+
+
 
 networks:
   proxy:

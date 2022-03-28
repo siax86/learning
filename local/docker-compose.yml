@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  php-fpm:
+    volumes:
+      - C:\Users\admin\learning\src:/var/www
+  db:
+    volumes:
+      - C:\Users\admin\learning\db:/var/lib/mysql
+  nginx:
+    volumes:
+      - C:\Users\admin\learning\src:/var/www
+      - C:\Users\admin\learning\docker\nginx\ssl:/etc/nginx/ssl
+      - C:\Users\admin\learning\docker\nginx\nginx.conf:/etc/nginx/nginx.conf:ro

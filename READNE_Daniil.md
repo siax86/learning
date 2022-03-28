@@ -18,3 +18,10 @@ git push - выложить в глобальный репозиторий с л
 git pull - взять с  глобального в локальный репозитория фаил
 git switch - взять ветку к себе 
 git merge - объединить проекты
+
+
+SOLID 
+
+php bin/console
+
+сущность MaterialType 

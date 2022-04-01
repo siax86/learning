@@ -316,7 +316,11 @@ class ComposerStaticInit6228d743a49d587098d742ab021bafcc
     );
 
     public static $classMap = array (
+        'App\\Entity\\Material' => __DIR__ . '/../..' . '/src/Entity/Material.php',
+        'App\\Entity\\MaterialType' => __DIR__ . '/../..' . '/src/Entity/MaterialType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\MaterialRepository' => __DIR__ . '/../..' . '/src/Repository/MaterialRepository.php',
+        'App\\Repository\\MaterialTypeRepository' => __DIR__ . '/../..' . '/src/Repository/MaterialTypeRepository.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Attribute\\AsEntityListener' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Attribute/AsEntityListener.php',
         'Doctrine\\Bundle\\DoctrineBundle\\CacheWarmer\\DoctrineMetadataCacheWarmer' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/CacheWarmer/DoctrineMetadataCacheWarmer.php',

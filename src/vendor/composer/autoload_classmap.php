@@ -6,7 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Entity\\Material' => $baseDir . '/src/Entity/Material.php',
+    'App\\Entity\\MaterialType' => $baseDir . '/src/Entity/MaterialType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
+    'App\\Repository\\MaterialRepository' => $baseDir . '/src/Repository/MaterialRepository.php',
+    'App\\Repository\\MaterialTypeRepository' => $baseDir . '/src/Repository/MaterialTypeRepository.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Doctrine\\Bundle\\DoctrineBundle\\Attribute\\AsEntityListener' => $vendorDir . '/doctrine/doctrine-bundle/Attribute/AsEntityListener.php',
     'Doctrine\\Bundle\\DoctrineBundle\\CacheWarmer\\DoctrineMetadataCacheWarmer' => $vendorDir . '/doctrine/doctrine-bundle/CacheWarmer/DoctrineMetadataCacheWarmer.php',

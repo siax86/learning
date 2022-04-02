@@ -25,3 +25,5 @@ SOLID
 php bin/console
 
 сущность MaterialType 
+
+doctrine data base creates

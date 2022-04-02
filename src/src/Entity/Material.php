@@ -16,6 +16,9 @@ class Material
     #[ORM\Column(type: 'string', length: 255)]
     private $name;
 
+    #[ORM\ManyToOne(targetEntity: MaterialType::class, inversedBy: 'materials')]
+    private $materialType;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -29,6 +32,18 @@ class Material
     public function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getMaterialType(): ?MaterialType
+    {
+        return $this->materialType;
+    }
+
+    public function setMaterialType(?MaterialType $materialType): self
+    {
+        $this->materialType = $materialType;
 
         return $this;
     }

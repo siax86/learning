@@ -28,6 +28,6 @@ php bin/console
 
 doctrine data base creates
 
-полиморфизм 3
 инкапсуляця 1
 наследование 2
+полиморфизм 3

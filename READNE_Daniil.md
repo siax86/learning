@@ -27,3 +27,6 @@ php bin/console
 сущность MaterialType 
 
 doctrine data base creates
+полиморфизм 3
+инкапсуляця 1
+наследование 2

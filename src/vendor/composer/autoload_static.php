@@ -316,6 +316,7 @@ class ComposerStaticInit6228d743a49d587098d742ab021bafcc
     );
 
     public static $classMap = array (
+        'App\\Controller\\MaterialController' => __DIR__ . '/../..' . '/src/Controller/MaterialController.php',
         'App\\Entity\\Material' => __DIR__ . '/../..' . '/src/Entity/Material.php',
         'App\\Entity\\MaterialType' => __DIR__ . '/../..' . '/src/Entity/MaterialType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',

@@ -25,10 +25,14 @@
 }
 
 .one {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(197, 197, 197);
 
 }
 
 .two {
-    background-color: rgb(245, 243, 243);
+    background-color: rgb(255, 255, 255);
+}
+
+img.middle {
+    vertical-align: middle;
 }

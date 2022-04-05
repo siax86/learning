@@ -5,11 +5,13 @@
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
+
 .page-link {
-color: black;
+    color: black;
 }
+
 .class-black {
- color: black;  
+    color: black;
 }
 
 .page-link {
@@ -20,4 +22,13 @@ color: black;
     background-color: #fff;
     border: 3px solid #dee2e6;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.one {
+    background-color: rgb(216, 216, 216);
+
+}
+
+.two {
+    background-color: rgb(245, 243, 243);
 }

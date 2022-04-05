@@ -21,3 +21,8 @@ git merge - объединить проекты
 
 git push
 git pull
+
+
+changes in local repo - git add .
+comment and checkpoint - git commit -m "why"
+upload my changes to repo - git push

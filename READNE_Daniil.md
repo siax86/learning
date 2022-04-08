@@ -31,3 +31,15 @@ doctrine data base creates
 инкапсуляця 1
 наследование 2
 полиморфизм 3
+
+
+как в symfony 6 на php 8, настроить serialyzer
+
+[{
+    "id":1,
+    "name":"Материал первый",
+    "materialType":{
+        "id":"type id",
+        "name":"type name"
+    }
+},{}...]
